@@ -1,0 +1,116 @@
+@import "tailwindcss";
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+  }
+  .h-96 {
+    height: 60vw;
+  }
+}
+
+
+/*
+:root {
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1.2;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+}
+*/
+
+
+:root {
+  --primary-bg: #FFFFFF;
+  --secondary-bg: #F5F5F5;
+  --text-color: #1A1A1A;
+  --accent-color: #003087;
+  --cta-hover: #00205B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-lora);
+  color: var(--text-color);
+  background-color: var(--primary-bg);
+}
+
+.deal-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.deal-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.scroll-section-outer{
+  overflow: hidden;
+}
+
+.scroll-section-inner{
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  margin: 30px;
+}
+
+.scroll-section h3{
+  font-weight: bold;
+  font-size: var(--text-7xl);
+  line-height: var(--text-7xl--line-height);
+  color:brown;
+}
+
+.scroll-section p {
+  font-weight: lighter;
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl--line-height);
+  margin-top: 50px;
+  width: 100%;
+  max-width: 90%;
+  word-wrap: break-word;
+  color:rgb(199, 83, 83);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden {
+scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
